@@ -17,19 +17,22 @@
         android:textStyle="bold"
         android:gravity="center"
         android:layout_margin="20dp"
-        android:textSize="30dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
         style="@style/date"
-        android:text="Checking date"/>
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Check in date"/>
 
     <EditText
         android:id="@+id/etCheckingdate"
         style="@style/etdate"/>
 
     <TextView
+        android:textColor="@color/colorPrimaryDark"
         style="@style/date"
         android:text="Check out date"/>
 
@@ -49,12 +52,15 @@
         android:layout_height="wrap_content">
 
         <TextView
+            android:textColor="@color/colorPrimaryDark"
             style="@style/tvCustomer"
             android:text="Adult"/>
         <TextView
+            android:textColor="@color/colorPrimaryDark"
             style="@style/tvCustomer"
             android:text="Child"/>
         <TextView
+            android:textColor="@color/colorPrimaryDark"
             style="@style/tvCustomer"
             android:text="Room"/>
     </LinearLayout>
@@ -86,6 +92,7 @@
         android:layout_height="wrap_content"/>
 
     <TextView
+        android:textColor="@color/colorPrimaryDark"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
