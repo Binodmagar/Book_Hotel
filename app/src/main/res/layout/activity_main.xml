@@ -14,47 +14,28 @@
 
     <TextView
         android:text="Book Hotel"
+        android:textStyle="bold"
+        android:gravity="center"
         android:layout_margin="20dp"
         android:textSize="30dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:textSize="20sp"
-        android:layout_margin="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/date"
         android:text="Checking date"/>
 
     <EditText
         android:id="@+id/etCheckingdate"
-        android:editable="false"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        style="@style/etdate"/>
 
     <TextView
-        android:textSize="20sp"
-        android:layout_margin="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        style="@style/date"
         android:text="Check out date"/>
 
     <EditText
         android:id="@+id/etCheckoutdate"
-        android:editable="false"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-
-    <!--    <TextView-->
-    <!--        android:textSize="20sp"-->
-    <!--        android:layout_margin="20sp"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="Select Room "/>-->
+        style="@style/etdate"/>
 
     <Spinner
         android:id="@+id/spRoom"
@@ -68,24 +49,16 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_weight="1"
+            style="@style/tvCustomer"
             android:text="Adult"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_weight="1"
+            style="@style/tvCustomer"
             android:text="Child"/>
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:layout_weight="1"
+            style="@style/tvCustomer"
             android:text="Room"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_margin="20dp"
         android:layout_width="match_parent"
@@ -93,21 +66,15 @@
 
         <EditText
             android:id="@+id/etAdult"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            style="@style/etCustomer"/>
 
         <EditText
             android:id="@+id/etChild"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            style="@style/etCustomer"/>
 
         <EditText
             android:id="@+id/etRoom"
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            style="@style/etCustomer"/>
     </LinearLayout>
 
     <Button
@@ -122,40 +89,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="Billing Details"
+        android:text="Bill Details"
         android:textAlignment="center"
         android:textSize="25dp"
         android:textStyle="bold" />
     <TextView
         android:id="@+id/tvTotalDays"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20dp" />
+        style="@style/result" />
     <TextView
         android:id="@+id/tvTotalRoom"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20dp" />
+        style="@style/result" />
     <TextView
         android:id="@+id/tvRoomPrice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20dp" />
+        style="@style/result" />
     <TextView
         android:id="@+id/tvTotal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20dp" />
+        style="@style/result" />
+    <TextView
+        android:id="@+id/tvVat"
+        style="@style/result"/>
     <TextView
         android:id="@+id/tvGrandTotal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:textSize="20dp" />
+        style="@style/result" />
 
 
 </LinearLayout>
